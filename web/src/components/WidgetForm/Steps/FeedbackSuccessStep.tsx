@@ -20,7 +20,7 @@ export function FeedbackSuccessStep({ onFeedbackRestartRequested }: FeedbackSucc
         <span className="text-xl mt-2">Agradecemos o feedback!</span>
 
         <button
-          className="py-2 px-6 mt-6 bg-zinc-800 rounded-md border-transparent text-sm leading-6 hover:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors disabled:opacity-50 disabled:hover:bg-brand-500"
+          className="py-2 px-6 mt-6 bg-zinc-100 dark:bg-zinc-800 rounded-md border-transparent text-sm leading-6 hover:bg-zinc-200 hover:dark:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors disabled:opacity-50 disabled:hover:bg-brand-500"
           onClick={onFeedbackRestartRequested}
         >
           Quero enviar outro
