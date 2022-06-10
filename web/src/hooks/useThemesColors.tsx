@@ -15,7 +15,10 @@ export function ThemesColorsProvider({ children }: ThemesColorsProviderProps) {
   const [theme, setTheme] = useState(() => {
     const storagedTheme = localStorage.getItem('@Widget:theme');
 
-    if (storagedTheme) {
+    if (storagedTheme && JSON.parse(storagedTheme) === 'LIGHT') {
+      const element = document.querySelector('html') as HTMLElement;
+      element.classList.remove('dark');
+
       return JSON.parse(storagedTheme);
     }
 
