@@ -1,0 +1,71 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    .title {
+      color: #0f0c0f;
+      height: 40px;
+      margin-left: 50px;
+      margin-top: 100px;
+      font-size: 22px;
+      font-family: "Roboto", sans-serif;
+    }
+
+    .label {
+      color: #0f0c0f;
+      margin-top: 70px;
+      margin-left: 100px;
+      font-size: 16px;
+      font-weight: bold;
+      font-family: "Roboto", sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .label > span {
+      margin-top: 10px;
+    }
+
+    .screenshot {
+      margin-top: 10px;
+      margin-left: 100px;
+    }
+
+    .screenshot img {
+      width: 500px;
+      height: 500px;
+    }
+
+    @media (max-width: 700px) {
+      .title, .label, .screenshot {   
+        margin-left: 5px;
+      }
+    }
+  </style>
+  <title>Feedback</title>
+</head>
+<body>
+  <div class="content">
+    <div class="title">
+      <br />
+      <span>nlw - Feedback widget</span>
+    </div>
+    <div class="label">
+      <span>Tipo do feedback: {{type}}</span>
+      <span>Comentário: {{comment}}</span>
+      {{#if screenshot }}
+       <span>Screenshot: Sim</span>
+      {{else}}
+        <span>Screenshot: Não</span>
+      {{/if}}
+    </div>
+    {{#if screenshot }}
+      <div class="screenshot">
+        <img src={{{screenshot}}} />
+      </div>
+    {{/if}}
+  </div>
+</body>
+</html>
