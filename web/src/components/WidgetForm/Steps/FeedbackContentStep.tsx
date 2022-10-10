@@ -8,7 +8,7 @@ import { CloseButton } from "../../CloseButton";
 import { Loading } from "../Loading";
 import { ScreenshotButton } from "../ScreenshotButton";
 
-interface FeedbackContentStepProps {
+export interface FeedbackContentStepProps {
   feedbackType: FeedbackType;
   onFeedbackRestartRequested: () => void;
   onFeedbackSend: () => void;
