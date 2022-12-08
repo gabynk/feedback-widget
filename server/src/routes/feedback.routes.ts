@@ -1,13 +1,13 @@
 import { Router } from "express";
-import { HandlebarsGenerateAdapter } from "./adapters/GenerateTemplate/HandlebarsAdapter/HandlebarsGenerateAdapter";
-import { NodemailerMailAdapter } from "./adapters/MailAdapter/nodemailer/NodemailerMailAdapter";
 
-import { PrismaFeedbacksRepository } from "./repositories/prisma/PrismaFeedbacksRepository";
-import { SubmitFeedbackUseCase } from "./useCase/SubmitFeedbackUseCase";
+import { HandlebarsGenerateAdapter } from "../adapters/GenerateTemplate/HandlebarsAdapter/HandlebarsGenerateAdapter";
+import { NodemailerMailAdapter } from "../adapters/MailAdapter/nodemailer/NodemailerMailAdapter";
+import { PrismaFeedbacksRepository } from "../repositories/prisma/PrismaFeedbacksRepository";
+import { SubmitFeedbackUseCase } from "../useCase/SubmitFeedbackUseCase/SubmitFeedbackUseCase";
 
-export const routes = Router();
+export const feedbackRoutes = Router();
 
-routes.post('/feedbacks', async (req, res) => {
+feedbackRoutes.post('/', async (req, res) => {
   const { type, comment, screenshot } = req.body;
 
   try {

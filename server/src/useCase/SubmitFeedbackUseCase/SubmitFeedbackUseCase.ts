@@ -1,6 +1,6 @@
-import { HandlebarsAdapter } from "../adapters/GenerateTemplate";
-import { MailAdapter } from "../adapters/MailAdapter";
-import { FeedbacksRepository } from "../repositories/FeedbacksRepository";
+import { HandlebarsAdapter } from "../../adapters/GenerateTemplate";
+import { MailAdapter } from "../../adapters/MailAdapter";
+import { FeedbacksRepository } from "../../repositories/FeedbacksRepository";
 
 interface SubmitFeedbackUseCaseRequest {
   type: string;
@@ -32,15 +32,15 @@ export class SubmitFeedbackUseCase {
       screenshot
     });
 
-    const newFeedbackTemplate = await this.handlebarsGenerateAdapter.generateNewFeedback({ 
-      type, 
-      comment, 
-      screenshot 
+    const newFeedbackTemplate = await this.handlebarsGenerateAdapter.generateNewFeedback({
+      type,
+      comment,
+      screenshot
     });
 
     await this.mailAdapter.sendMail({
-        subject: 'Novo feedback',
-        body: newFeedbackTemplate
-      });
+      subject: 'Novo feedback',
+      body: newFeedbackTemplate
+    });
   }
 }

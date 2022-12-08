@@ -28,7 +28,7 @@ describe('Submit feedback', () => {
       type: '',
       comment: 'example comment',
       screenshot: 'data:image/png;base64,test'
-    })).rejects.toThrow()
+    })).rejects.toThrow('Invalid screenshot format.')
   })
 
   it('should not be able to submit feedback without comment', async () => {
@@ -36,7 +36,7 @@ describe('Submit feedback', () => {
       type: 'BUG',
       comment: '',
       screenshot: 'data:image/png;base64,test'
-    })).rejects.toThrow()
+    })).rejects.toThrow('Invalid screenshot format.')
   })
 
   it('should not be able to submit feedback with an invalid screenshot', async () => {
@@ -44,6 +44,6 @@ describe('Submit feedback', () => {
       type: 'BUG',
       comment: 'example comment',
       screenshot: 'test.png'
-    })).rejects.toThrow()
+    })).rejects.toThrow('Invalid screenshot format.')
   })
 })
