@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1670442296630" clover="3.2.0">
-  <project timestamp="1670442296630" name="All files">
-    <metrics statements="259" coveredstatements="259" conditionals="28" coveredconditionals="27" methods="9" coveredmethods="9" elements="296" coveredelements="295" complexity="0" loc="259" ncloc="259" packages="4" files="5" classes="5"/>
+<coverage generated="1671132744138" clover="3.2.0">
+  <project timestamp="1671132744139" name="All files">
+    <metrics statements="304" coveredstatements="304" conditionals="40" coveredconditionals="37" methods="13" coveredmethods="13" elements="357" coveredelements="354" complexity="0" loc="304" ncloc="304" packages="5" files="7" classes="7"/>
     <package name="dist.useCase">
       <metrics statements="34" coveredstatements="34" conditionals="7" coveredconditionals="6" methods="2" coveredmethods="2"/>
       <file name="SubmitFeedbackUseCase.js" path="C:\Users\Gabriele\Projetos\rocketseat22\feedback-widget\server\dist\useCase\SubmitFeedbackUseCase.js">
@@ -43,7 +43,33 @@
       </file>
     </package>
     <package name="src.repositories.in-memory">
-      <metrics statements="32" coveredstatements="32" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+      <metrics statements="55" coveredstatements="55" conditionals="7" coveredconditionals="6" methods="4" coveredmethods="4"/>
+      <file name="FeedbacksRepositoryInMemory.ts" path="C:\Users\Gabriele\Projetos\rocketseat22\feedback-widget\server\src\repositories\in-memory\FeedbacksRepositoryInMemory.ts">
+        <metrics statements="23" coveredstatements="23" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+      </file>
       <file name="UsersRepositoryInMemory.ts" path="C:\Users\Gabriele\Projetos\rocketseat22\feedback-widget\server\src\repositories\in-memory\UsersRepositoryInMemory.ts">
         <metrics statements="32" coveredstatements="32" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
@@ -236,10 +262,38 @@
         <line num="93" count="1" type="stmt"/>
       </file>
     </package>
+    <package name="src.useCase.ListFeedbackUseCase">
+      <metrics statements="22" coveredstatements="22" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="2"/>
+      <file name="ListFeedbackUseCase.ts" path="C:\Users\Gabriele\Projetos\rocketseat22\feedback-widget\server\src\useCase\ListFeedbackUseCase\ListFeedbackUseCase.ts">
+        <metrics statements="22" coveredstatements="22" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="3" type="cond" truecount="3" falsecount="0"/>
+        <line num="16" count="3" type="cond" truecount="0" falsecount="1"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="src.useCase.SubmitFeedbackUseCase">
-      <metrics statements="46" coveredstatements="46" conditionals="5" coveredconditionals="5" methods="2" coveredmethods="2"/>
+      <metrics statements="46" coveredstatements="46" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2"/>
       <file name="SubmitFeedbackUseCase.ts" path="C:\Users\Gabriele\Projetos\rocketseat22\feedback-widget\server\src\useCase\SubmitFeedbackUseCase\SubmitFeedbackUseCase.ts">
-        <metrics statements="46" coveredstatements="46" conditionals="5" coveredconditionals="5" methods="2" coveredmethods="2"/>
+        <metrics statements="46" coveredstatements="46" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -252,39 +306,39 @@
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="19" count="4" type="stmt"/>
-        <line num="20" count="4" type="stmt"/>
-        <line num="21" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="7" type="stmt"/>
+        <line num="20" count="7" type="stmt"/>
+        <line num="21" count="7" type="cond" truecount="3" falsecount="0"/>
         <line num="22" count="2" type="stmt"/>
         <line num="23" count="2" type="stmt"/>
-        <line num="24" count="2" type="stmt"/>
-        <line num="25" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="24" count="5" type="stmt"/>
+        <line num="25" count="7" type="cond" truecount="2" falsecount="0"/>
         <line num="26" count="1" type="stmt"/>
         <line num="27" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="35" count="1" type="stmt"/>
-        <line num="36" count="1" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
-        <line num="43" count="1" type="stmt"/>
-        <line num="44" count="1" type="stmt"/>
-        <line num="45" count="1" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
+        <line num="39" count="4" type="stmt"/>
+        <line num="40" count="4" type="stmt"/>
+        <line num="41" count="4" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
+        <line num="43" count="4" type="stmt"/>
+        <line num="44" count="4" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
         <line num="46" count="1" type="stmt"/>
       </file>
     </package>

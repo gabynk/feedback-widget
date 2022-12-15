@@ -1,5 +1,5 @@
 import { prisma } from "../../prisma";
-import { FeedbackCreateData, FeedbacksRepository } from "../FeedbacksRepository";
+import { FeedbackCreateData, FeedbackListData, FeedbacksRepository } from "../FeedbacksRepository";
 
 export class PrismaFeedbacksRepository implements FeedbacksRepository {
   async create({ type, comment, screenshot }: FeedbackCreateData) {
@@ -8,6 +8,21 @@ export class PrismaFeedbacksRepository implements FeedbacksRepository {
         type,
         comment,
         screenshot
+      }
+    });
+  }
+
+  async list({ type, take, skip }: FeedbackListData) {
+    return await prisma.feedback.findMany({
+      take,
+      skip,
+      where: {
+        type: {
+          contains: type,
+        },
+      },
+      orderBy: {
+        type: 'asc'
       }
     });
   }

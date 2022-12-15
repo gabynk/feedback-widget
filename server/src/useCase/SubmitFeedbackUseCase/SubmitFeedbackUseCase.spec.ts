@@ -1,11 +1,12 @@
+import { FeedbacksRepositoryInMemory } from "../../repositories/in-memory/FeedbacksRepositoryInMemory";
 import { SubmitFeedbackUseCase } from "./SubmitFeedbackUseCase"
 
-const createFeedbackSpy = jest.fn()
 const sendMailSpy = jest.fn()
 const generateNewFeedbackSpy = jest.fn()
 
+const feedbacksRepositoryInMemory = new FeedbacksRepositoryInMemory();
 const submitFeedback = new SubmitFeedbackUseCase(
-  { create: createFeedbackSpy },
+  feedbacksRepositoryInMemory,
   { sendMail: sendMailSpy },
   { generateNewFeedback: generateNewFeedbackSpy }
 )
@@ -18,7 +19,6 @@ describe('Submit feedback', () => {
       screenshot: 'data:image/png;base64,test'
     })).resolves.not.toThrow()
 
-    expect(createFeedbackSpy).toBeCalled()
     expect(sendMailSpy).toBeCalled()
     expect(generateNewFeedbackSpy).toBeCalled()
   })
